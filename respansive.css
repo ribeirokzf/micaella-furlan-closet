@@ -1,0 +1,55 @@
+@media (max-width:799px) {
+    #hero {
+        background-image: url(/img/hero4.png);
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+    }
+    #destaques .pro-container{
+        justify-content: center;
+    }
+    #destaques .pro{
+        margin: 15px;
+    }
+}
+
+@media (max-width:477px){
+    .section-p1{
+        padding: 20px;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 20px;
+    }
+    h4{
+        font-size: 15px;
+        line-height: 10px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #header {
+    padding: 10px 30px;
+    }
+    #hero {
+        background-position: 65%;
+        padding: 0 10px 100px 5px ;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #destaques .pro{
+        width: 100%;
+    }
+    #closet .pro{
+        width: 100%;
+    }
+    footer .logo{
+        padding: 10px  0px;
+    }
+}
