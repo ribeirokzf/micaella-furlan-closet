@@ -1,6 +1,5 @@
 @media (max-width:799px) {
     #hero {
-        background-image: url(/img/hero4.png);
         height: 70vh;
         background-position: top 30% right 30%;
         padding: 0 80px;
