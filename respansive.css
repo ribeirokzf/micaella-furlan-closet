@@ -14,7 +14,7 @@
 
 @media (max-width:477px){
     .section-p1{
-        padding: 20px;
+        padding: 10px;
     }
     h1{
         font-size: 30px;
@@ -42,11 +42,11 @@
         width: 155px;
         margin: 0 0 15px 0;
     }
-    #destaques .pro{
-        width: 100%;
+    #destaques .pro {
+        width: 40%;
     }
     #closet .pro{
-        width: 100%;
+        width: 40%;
     }
     footer .logo{
         padding: 10px  0px;

@@ -170,7 +170,7 @@ p{
 }
 #destaques .pro{
   width: 23%;
-  min-width: 250px;
+  width: 250px;
   padding: 1px 1px;
   border: 1px solid #22222265;
   cursor: pointer;
@@ -234,8 +234,7 @@ p{
     text-align: center;
 }
 #closet .pro{
-    width: 23%;
-    min-width: 250px;
+    width: 250px;
     padding: 1px 1px;
     border: 1px solid #22222265;
     cursor: pointer;
