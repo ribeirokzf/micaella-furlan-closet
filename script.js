@@ -41,9 +41,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/* botao back-to-top */
-    var btn =documentSelector("#back-to-top");
+    // Seçao de filtragem de proutos
+    document.getElementById("applyFilters").addEventListener("click", function () {
+    const categoryFilter = document.getElementById("categoryFilter").value;
+    const priceFilter = document.getElementById("priceFilter").value;
+    const popularityFilter = document.getElementById("popularityFilter").value;
 
-    btn.addEventListener("click",function(){
-        window.scrollTo(0,0);
+    const products = document.querySelectorAll(".pro");
+
+    products.forEach((product) => {
+      const category = product.dataset.category;
+      const price = parseFloat(product.dataset.price);
+      const popularity = product.dataset.popularity;
+
+      // Verificar os filtros aplicados
+      let categoryMatch = categoryFilter === "all" || category === categoryFilter;
+      let priceMatch =
+        priceFilter === "all" ||
+        (priceFilter === "low" && price < 50) ||
+        (priceFilter === "medium" && price >= 50 && price <= 100) ||
+        (priceFilter === "high" && price > 100);
+      let popularityMatch =
+        popularityFilter === "all" ||
+        popularity === popularityFilter;
+
+      // Mostrar ou ocultar o produto com base nos filtros
+      if (categoryMatch && priceMatch && popularityMatch) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
     });
+  });
