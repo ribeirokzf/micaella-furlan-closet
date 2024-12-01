@@ -32,7 +32,7 @@ p{
     color: #222;
 }
 .section-p1{
-    padding: 40px 80px;
+    padding: 40px 150px 80px 100px;
 }
 .section-m1{
     margin: 100px;
@@ -319,95 +319,59 @@ p{
   align-items: center;
 }
 
-/*filtro*/
-#filter-options {
-  margin: 20px 0;
-  padding: 15px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+/*pags*/
+#prox-pag{
+  text-align: center;
 }
 
-#filter-options h3 {
-  margin-bottom: 10px;
+#prox-pag a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  color: white;
+  font-weight: 500;
 }
+#prox-pag a:hover{
+  background-color: white;
+  color: #222;
+  border: 1px solid #00000023;
 
-#filter-options form {
+}
+#banner{
+  user-select: none;
+  background-image: url('img/b2.jpg');
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   align-items: center;
 }
-
-#filter-options select,
-#filter-options button {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+#banner h2,#banner p{
+  color: wheat;
 }
 
-#filter-options button {
-  background-color: #088178;
-  color: white;
-  cursor: pointer;
-}
-
-#filter-options button:hover {
-  background-color: #065e5a;
-}
-#reviews {
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-#reviews h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #3C88AD;
-}
-
-#reviews p {
-  color: #555;
-  margin-bottom: 40px;
-  font-size: 18px;
-}
-
-.reviews-container {
+#banner-closet{
+  user-select: none;
+  background-image: url('img/b16.jpg');
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  align-items: center;
+}
+#banner-closet h2,#banner-closet p{
+  color: white;
 }
 
-.review {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  padding: 20px;
-  text-align: center;
-}
 
-.review img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid #3C88AD;
-}
 
-.review h5 {
-  font-size: 20px;
-  color: #3C88AD;
-  margin-bottom: 10px;
-}
 
-.review p {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
-}
 
 /*footer*/
 footer{
