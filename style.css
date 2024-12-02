@@ -33,10 +33,10 @@ p{
 }
 .section-p1{
     padding: 40px 150px 80px 100px;
+    padding-bottom: 150px;
 }
 .section-m1{
     margin: 100px;
-    padding-top: 5rem;
 }
 #header{
   display: flex;
